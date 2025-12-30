@@ -1,19 +1,15 @@
-
 from abc import ABC, abstractmethod
+from pyspark.sql import DataFrame, SparkSession
 from src.utils.spark_manager import SparkManager
 
 class BaseTransformer(ABC):
-    def __init__(self):
-        self.spark = SparkManager.get_session()
+    def __init__(self) -> None:
+        # On précise que self.spark est une SparkSession
+        self.spark: SparkSession = SparkManager.get_session()
 
     @abstractmethod
-    def run(self):
-        """
-        Toutes les classes qui héritent de BaseTransformer 
-        DOIVENT implémenter cette méthode.
-        """
+    def run(self) -> None:
         pass
 
-    def log_progress(self, message: str):
-        """Une méthode commune à tous les transformers."""
+    def log_progress(self, message: str) -> None:
         print(f"[PIPELINE STEP] : {message}")
