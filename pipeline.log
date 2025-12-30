@@ -1,0 +1,9 @@
+2025-12-30 17:04:31,899 - PIPELINE_MAIN - INFO - 🚀 Démarrage du cycle complet de données Lakehouse
+2025-12-30 17:04:31,899 - PIPELINE_MAIN - INFO - --- ÉTAPE 1 : INGESTION ---
+2025-12-30 17:04:50,355 - PIPELINE_MAIN - INFO - --- ÉTAPE 2 : SILVER TRANSFORMATION ---
+2025-12-30 17:04:53,105 - PIPELINE_MAIN - INFO - --- ÉTAPE 3 : GOLD TRANSFORMATION ---
+2025-12-30 17:04:55,406 - PIPELINE_MAIN - INFO - --- ÉTAPE 4 : DATA QUALITY CHECKS ---
+2025-12-30 17:04:55,410 - DATA_QUALITY - INFO - 🧪 Démarrage des tests de qualité sur la couche Gold...
+2025-12-30 17:04:55,935 - DATA_QUALITY - ERROR - ❌ 64 cartes ont un prix nul ou négatif !
+2025-12-30 17:04:56,194 - PIPELINE_MAIN - WARNING - 🏁 Pipeline terminé mais avec des alertes qualité.
+2025-12-30 17:04:56,194 - PIPELINE_MAIN - INFO - ✨ Pipeline exécuté avec succès. Données disponibles dans data/gold/
