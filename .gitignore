@@ -7,6 +7,6 @@ wheels/
 *.egg-info
 data/
 tampon_*.txt
-
+tests/*.ipynb
 # Virtual environments
 .venv
