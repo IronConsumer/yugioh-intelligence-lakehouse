@@ -8,5 +8,6 @@ wheels/
 data/
 tampon_*.txt
 tests/*.ipynb
+tests/*.txt
 # Virtual environments
 .venv
